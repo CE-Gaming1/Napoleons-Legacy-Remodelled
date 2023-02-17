@@ -1,0 +1,2 @@
+1. Mishmash map mod and Agathos font incorporated.
+2. Crimeamod Defines.lua added (should improve AI a bit)

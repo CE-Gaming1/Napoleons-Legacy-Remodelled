@@ -1,0 +1,24 @@
+V1 Plans. 
+
+Minor changes
+-------------------------------
+1. Make Netherlands only in holland and friesland (direct puppet france) 	DONE
+2. Ireland in french sphere DONE
+3. Napoleonic Spain to have cores on Spain except Catalonia DONE
+4. Napoleonic Spain to not be a puppet (still french sphere) DONE
+5. France to own Sardinia DONE
+6. British Empire to have no cores on UK other than Ireland THIS IS DONE(other cores should be through a decision 1870 or 1850??)
+7. Remove event chain for Union Empire wars. DONE
+8. EIC to be replaced by the British Empire owning all territorys.
+9. PLC to start in French sphere DONE
+10. If exiled Spain spheres Napoleonic Spain the reunification event will fire. DONE
+11. Exiled spain will have no cores on spain DONE
+
+Larger Ideas.
+---------------
+1. Celtic Union. Formed by Ireland must own Scottish lands
+2. Scandinavia War to decide who will form it (nat & imp to fire decision)
+3. France Decision for Rhenish Accepted
+----------------------------------------------
+
+

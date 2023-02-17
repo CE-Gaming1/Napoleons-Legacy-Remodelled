@@ -1,0 +1,107 @@
+political_decisions = {
+    british_claim_on_ireland = {
+        potential = {
+            exists = IRE
+            tag = BRI
+            OR = {
+                government = democracy
+                government = presidential_dictatorship
+            }
+
+            CAN = {
+                OR = {
+                    government = hms_government
+                    government = prussian_constitutionalism
+                    government = absolute_monarchy
+                }
+            }
+
+            year = 1850
+
+            NOT = { has_global_flag = british_claim_on_ireland }
+            IRE = { war = no }
+
+            NOT = {
+                has_global_flag = the_britains_reunified
+            }
+        }
+
+        allow = {
+            war = no
+            state_n_government = 1
+        }
+
+        effect = {
+            set_global_flag = british_claim_on_ireland
+            ENG_254 = { add_core = BRI }
+            release_vassal = IRE
+            leave_alliance = IRE
+
+            diplomatic_influence = {
+                who = IRE
+                value = -200
+            }
+
+            relation = {
+                who = IRE
+                value = -100
+            }
+
+            IRE = { country_event = 66649 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    royal_treaty_of_dublin = {
+        potential = {
+            exists = IRE
+            tag = CAN
+            NOT = { has_country_flag = royal_treaty_of_dublin }
+            has_global_flag = british_claim_on_ireland
+            NOT = { has_global_flag = the_britains_reunified }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            set_country_flag = royal_treaty_of_dublin
+            IRE = { country_event = 66650 }
+            badboy = -2
+            prestige = 5
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    treaty_of_dublin = {
+        potential = {
+            tag = IRE
+            has_country_flag = ireland_no_response
+            NOT = { has_country_flag = treaty_of_dublin }
+            NOT = { has_global_flag = the_britains_reunified }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 10
+            set_country_flag = treaty_of_dublin
+            BRI = {
+                country_event = 66654
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+
